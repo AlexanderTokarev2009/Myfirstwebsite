@@ -1,0 +1,363 @@
+           body {
+        margin: 0;
+        background-color:#000000;
+      }
+
+      .logo {
+        width: 100%;
+        height: 125px;
+        background-color: #000000;
+        display: flex;
+        position: fixed;
+        border: 15px #FFFFFF;
+        z-index: 5;
+      }
+
+      .icon {
+        height: 125px;
+      }
+      .abtus{
+        width:220px;
+        font-size: 20;
+        height:75px;
+        margin-left: 100px;
+        border: 3px solid black;
+        border-radius: 35%;
+        background-color:#FFA500;
+        cursor: pointer;
+        margin-top: 7px;
+        text-align: center;
+        text-justify: center;
+      }
+      .whattype{
+        width:400px;
+        font-size: 20;
+        height:75px;
+        margin-left: 100px;
+        border: 3px solid black;
+        border-radius: 35%;
+        background-color:#FFA500;
+        cursor: pointer;
+        margin-top: 7px;
+        text-align: center;
+        text-justify: center;
+      }
+      .gear{
+        width:300px;
+        font-size: 20;
+        height:75px;
+        margin-left: 100px;
+        border: 3px solid black;
+        border-radius: 35%;
+        background-color:#FFA500;
+        cursor: pointer;
+        margin-top: 7px;
+      }
+      .contact {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 30px;
+      }
+
+      .animated {
+        position: absolute;
+        left: calc(100% - 350px);
+        animation: 1s mymove 1;
+      }
+
+      @keyframes mymove {
+        from {
+          left: 70%;
+        }
+
+        to {
+          left: calc(100% - 350px);
+        }
+      }
+
+      .choosing {
+        height: 150px;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        text-decoration-color: white;
+        animation: yourmove 1s 1;
+        margin: 20px;
+        right: 70%;
+      }
+      @keyframes yourmove {
+        from {
+           left: -140px;
+        }
+
+        to {
+           left: 0;
+        }
+
+        ;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+      }
+
+
+      .ph1{
+        height: 150px;
+      }
+      .kawas {
+        height: 150px;
+      }
+
+      .ph3 {
+        display: block;
+        object-fit: cover;
+      }
+
+      .yamaha250 {
+        width: 100%;
+        height: 480px;
+        margin:30px;
+        display:flex;
+      }
+
+      .features-specs {
+        font-size: 25;
+      }
+
+      .ph3 {
+        height: 450px;
+      }
+
+      .ducati{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        margin:20px;
+        font-size: 25;
+      }
+      .dph{
+        height:350px;
+        position: absolute;
+        left: 50%;
+        animation: 4s itmove 1;
+      }
+      .dtxt{
+        z-index: 1;
+      }
+      @keyframes itmove {
+        from {
+           left: -500px;
+        }
+
+        to {
+           left: 50%;
+        }
+
+        ;
+      }
+      .leg {
+        width: 100%;
+        height: 400px;
+        background-color: #E5E5E5;
+      }
+      .h200{
+        height: 200px;
+        border: 40px;
+        border-color: #FFFFFF;
+      }
+      .timeline{
+        position: relative;
+        max-width: 1200px;
+        margin:100px auto;
+      }
+      .container{
+        padding:10px 50px;
+        position: relative;
+        width: 40%;
+        animation:movedown 1s linear forwards;
+        opacity: 0;
+      }
+      @keyframes movedown{
+        0%{
+          opacity: 1;
+          transform: translateY(-30px);
+        }
+        100%{
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+
+      .text-box{
+        padding:20px 40px;
+        background-color: #fff;
+        position: relative;
+        border-radius: 6px;
+      }
+     .left-container{
+      left:0%;
+      margin-right: 70px;
+     }
+     .right-container{
+      left:50%;
+     }
+     .timeline::after{
+      content:'';
+      position: absolute;
+      width: 6px;
+      height: 100%;
+      background-color: orange;
+      top:0;
+      left:50%;
+      margin-left: -3px;
+      z-index: -1;
+      animation: moveline 4s linear forwards;
+     }
+
+     @keyframes moveline{
+      0%{
+        height: 0;
+      }
+      100%{
+        height: 100%;
+      }
+
+     }
+     .left-container-arrow{
+      height: 0;
+      width: 0;
+      position: absolute;
+      top:28px;
+      z-index: 1;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-left: 15px solid #fff;
+      right:-15px;
+     }
+     .right-container-arrow{
+      height: 0;
+      width: 0;
+      position: absolute;
+      top:28px;
+      z-index: 1;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-right: 15px solid #fff;
+      left:35px;
+     }
+     .parallax > use {
+      animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+    }
+    .parallax > use:nth-child(1) {
+      animation-delay: -2s;
+      animation-duration: 8s;
+    }
+    .parallax > use:nth-child(2) {
+      animation-delay: -3s;
+      animation-duration: 10s;
+    }
+    .parallax > use:nth-child(3) {
+      animation-delay: -4s;
+      animation-duration: 14s;
+    }
+    .parallax > use:nth-child(4) {
+      animation-delay: -5s;
+      animation-duration: 18s;
+    }
+    @keyframes move-forever {
+      0% {
+       transform: translate3d(-90px,0,0);
+      }
+      100% { 
+        transform: translate3d(85px,0,0);
+      }
+    }
+    .bmw{
+      width: 250px;
+      margin-left: 100px;
+      margin-top: 50px;
+      height: 400px;
+      border: 4px solid white;
+      margin-bottom: 70px;
+      float
+
+    }
+    .bm{
+      width: 240px;
+      margin: 5px;
+   }
+    .nine{
+      width: 250px;
+      margin-left: 200px;
+      margin-right: 80px;
+      margin-top: 50px;
+      height: 400px;
+      border: 4px solid white;
+      margin-bottom: 70px;
+    }
+    .duca{
+      width: 250px;
+      margin-left: 180px;
+      margin-top: 50px;
+      height: 400px;
+      border: 4px solid white;
+      margin-bottom: 70px;
+      justify-content: center;
+    }
+    .points{
+      height: 500px;
+      display: flex;
+    }
+    .cubesBox{
+      height: 1000px;
+      display: flex;
+    }
+    .cube{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      transform-styLe: preserve-3d;
+
+    }
+    .face{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      opacity: 0.9;
+    }
+    .right{
+      background-color: #ade8f4;
+      Left: 25px;
+      transform: rotateY(90deg);
+    }
+    .left{
+      background-color: #ade8f4;
+      Left: -25px;
+      transform: rotateY(90deg);
+    }
+      .bottom{
+      background-color: #48cae4;
+      top: 25px;
+      transform: rotateX(90deg);
+    }
+      .top{
+      background-color: #48cae4;
+      top: -25px;
+      transform: rotateX(90deg);
+    }
+    .front{
+      background-color: #caf0f8;
+      transform: translateZ(25px);
+    }
+    .dub{
+      height: 100%;
+      width: 100%;
+    }
+         
+    
